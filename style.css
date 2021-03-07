@@ -1,0 +1,54 @@
+body{
+    background-image: url('../assets/images/bg.png');
+    height: 100vh;
+    color:white;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.double-bar{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.container-custom{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.border-top{
+    border-top: .2rem solid #341c96 !important;
+}
+.text-image{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: height .5s;
+    display: block;
+}
+
+.hide-sm{
+    display: block;
+}
+
+.show-sm{
+    display: none;
+}
+
+@media (max-width:767px){
+    .text-image{
+        top: 50%;
+        left: 60%;
+    }
+    .show-sm{
+        display: block
+    }
+    .hide-sm{
+        display: none;
+    }
+}
